@@ -211,7 +211,7 @@ const Main: FC<IMainProps> = () => {
       isOpeningStatement: isShowPrompt,
     }
     if (calculatedIntroduction)
-      return [openStatement]
+      return [openstatement]
 
     return []
   }
