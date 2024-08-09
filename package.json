@@ -81,6 +81,7 @@
     "autoprefixer": "^10.4.14",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.8.0",
+    "hygen": "^6.2.11",
     "lint-staged": "^13.2.2",
     "postcss": "^8.4.21",
     "storybook": "^8.2.8",

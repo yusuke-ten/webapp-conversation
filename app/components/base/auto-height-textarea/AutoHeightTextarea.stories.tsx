@@ -1,21 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import AppIcon from './'
+import AutoHeightTextarea from './'
 
 const meta = {
-  title: 'base/AppIcon',
-  component: AppIcon,
+  title: 'base/AutoHeightTextarea',
+  component: AutoHeightTextarea,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof AppIcon>
+} satisfies Meta<typeof AutoHeightTextarea>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    size: 'medium',
-    rounded: false,
+    value: 'Hello, World!',
+    onChange: () => { },
   },
 }
