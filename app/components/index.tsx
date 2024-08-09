@@ -23,7 +23,11 @@ import { API_KEY, APP_ID, APP_INFO, isShowPrompt, promptTemplate } from '@/confi
 import type { Annotation as AnnotationType } from '@/types/log'
 import { addFileInfos, sortAgentSorts } from '@/utils/tools'
 
-const Main: FC = () => {
+export type IMainProps = {
+  params: any
+}
+
+const Main: FC<IMainProps> = () => {
   const { t } = useTranslation()
   const media = useBreakpoints()
   const isMobile = media === MediaType.mobile
@@ -47,8 +51,8 @@ const Main: FC = () => {
 
   useEffect(() => {
     if (APP_INFO?.title)
-      document.title = `${APP_INFO.title} - Powered by Dify`
-  }, [APP_INFO?.title])
+      document.title = `${APP_INFO.title} - Powered by Hokosaki`
+  }, [])
 
   // onData change thought (the produce obj). https://github.com/immerjs/immer/issues/576
   useEffect(() => {
